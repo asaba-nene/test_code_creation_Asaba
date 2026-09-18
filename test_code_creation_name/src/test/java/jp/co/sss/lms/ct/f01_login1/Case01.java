@@ -35,7 +35,13 @@ public class Case01 {
 	@Order(1)
 	@DisplayName("テスト01 トップページURLでアクセス")
 	void test01() {
-		// TODO ここに追加
+		// 1. トップページ（URL）にアクセス
+
+		goTo("http://localhost:8080/lms/");
+
+		// 2 エビデンス（スクリーンショット）取得
+		getEvidence(new Object() {
+		});
 	}
 
 }
